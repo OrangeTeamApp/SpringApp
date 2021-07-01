@@ -23,7 +23,7 @@ public class User {
     private String firstName;
     @Column(name = "last_name")
     private String lastName;
-    @Column(name = "birth_date")
+    @Column(name = "birth_day")
     private LocalDate birthDate;
     @Column(name = "email")
     private String email;
