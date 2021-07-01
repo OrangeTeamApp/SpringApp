@@ -25,7 +25,7 @@ public class UserServiceImpl implements UserService {
     }
 
     public User update(User user, long id) {
-       return userDao.update(user);
+       return userDao.update(userDao.findById(id));
     }
 
     public User save(User newUser) {
