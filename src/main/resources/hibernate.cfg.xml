@@ -7,13 +7,14 @@
     <session-factory>
         <!--Database connection settings-->
         <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
-        <property name="hibernate.connection.url">jdbc:postgresql://34.116.238.97:5432/andersen</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://172.17.0.2:5432/andersen</property>
         <property name="hibernate.connection.username">user</property>
         <property name="hibernate.connection.password">user</property>
         <!--JDBC connection pool (use the built-in)-->
         <property name="hibernate.connection.pool_size">100</property>
         <!--Echo all executed SQL to stdout-->
         <property name="show_sql">true</property>
+        <property name="hbm2ddl.auto">update</property>
         <!--SQL dialect-->
         <!--<property name="dialect">org.hibernate.dialect.PostgreSQLDialect</property>
         <property name="hibernate.current_session_context_class">thread</property>
